@@ -1,0 +1,105 @@
+--------------------------------------------------------------------------------------------------------
+MICRO-INVESTIGACIÓN
+--------------------------------------------------------------------------------------------------------
+1. ¿Qué es OpenMP?
+
+- OpenMP es un API para programación multiprocesos de memoria compartida. OpenMP se basa en el
+paradigma fork-join donde una tarea se divide en tareas más pequeñas con el fin de unir los
+resultados para obtener un resultado final.
+
+2. ¿Cómo se define una región paralela en OpenMP utilizando pragmas?
+
+- Se define mediante la sentencia: # pragma omp parallel
+
+3. ¿Cómo se define la cantidad de hilos a utilizar al paralelizar usando OpenMP?
+
+- Se define mediante la sentencia: omp_set_num_threads(num_procs); donde "num_procs" es la cantidad
+de hilos que se requieren, según el criterio del programador.
+
+4. ¿Cómo se compila un código fuente c para utilizar OpenMP y qué encabezado debe incluirse?
+
+- Se debe utilizar la bandera -fopenmp para compiladores GNU (gcc, g++ y gfortran), por ejemplo:
+$ gcc -o exe -fopenmp file.c
+El encabezado que se debe incluir en la aplicación es: #include <omp.h>
+
+5. ¿Cómo maneja OpenMP la sincronización entre hilos y por qué esto es importante?
+
+-OpenMP ofrece dos métodos de sincrinización:
+5.1 Método de exclusión mutua: para hacer uso de exclusión mutua, hace uso de secciones críticas. Esto
+es que define un trozo de código que no puede ser ejecutado por más de un hilo al mismo tiempo.
+5.2 Método de sincronización por eventos: puede hacer uso de banderas. Esto divide a los hilos en dos
+partes, las productoras y las consumidoras. Las productoras son las encargadas de  manejar las banderas,
+mientras que las otras solo acceden a los datos de cierto código si la bandera se lo permite.
+
+--------------------------------------------------------------------------------------------------------
+PRIMER EJEMPLO: Calculo de pi
+--------------------------------------------------------------------------------------------------------
+Pi Serial
+
+1. Analice la implementación del código y detecte qué sección del código podría paralelizarse
+por medio de la técnica de multihilo.
+
+- Este código podría paralizarse por medio de la técnica multihilo en el bucle. Para ello, se
+asigna un hilo para la para el cálculo de la variable "x", y por ende, otro hilo para calcular
+la variable "sum". De esta manera el tiempo de ejecución se optimiza.
+
+2. Con respecto a las variables de la aplicación (dentro del código paralelizable) ¿cuáles
+deberían ser privadas y cuáles deberían ser compartidas? ¿Por qué?
+
+- Las variables compartidas deberían ser num_steps, x y sum porque son variables que son utilizadas
+por los dos posibles procesos que se requieren paralelizar, de esta manera los dos pueden lograr acceder
+a estas cuando lo necesiten. Por otra parte, las demás variables pueden ser privadas, ya que no infieren
+en la paralelización de ambos procesos, o sea que algunos no influyen en los cálculos, y las que sí
+influyen no cambian su valor.
+
+3. Realice la compilación del código, utilizando el método requerido para aplicaciones de
+OpenMP.
+
+- Compilación realizada mediante el archivo Makefile adjunto en la carpeta "pi_serial".
+
+4. Ejecute la aplicación. Realice un gráfico de tiempo para al menos 4 números de pasos
+distintos (iteraciones para cálculo del valor de pi).
+
+- Se encuentra en el archivo "pi_serial/grafico.pdf".
+
+--------------------------------------------------------------------------------------------------------
+Pi Paralelo
+
+1. Analice el código dado. ¿Cómo se define la cantidad de hilos a ejecutar? ¿Qué funcionalidad
+tiene el pragma omp single? ¿Qué función realiza la línea: #pragma omp for reduction(+:sum) private(x)
+
+- La cantidad de hilos a ejecutar se define mediante el número de procesadores que tiene la computadora.
+Pragma omp simple identifica una sección específica del código donde se debería correr con un hilo simple
+disponible, dentro del conjunto de hilos (puede ser cualquiera).
+La línea: #pragma omp for reduction(+:sum) private(x) Asigna a los hilos un bloque del ciclo para que
+cada uno de ellos resuelvan dicho ciclo de forma paralela. La sentencia reduction genera una lista de
+resultados que genera cada hilo con el fin de aplicarles la operación asociativa (debe ser asociativa
+siempre, y en este caso es la suma) para generar el resultado final. Además, la sentencia private(x)
+indica que solo los hilos que van a ejecutar el bloque de codigo especifico, pueden manipular la variable
+x.
+
+2. Realice la compilación del código.
+
+- Compilación se realizó mediante el siguiente comando: $ gcc -o xxx -fopenmp pi_par.c
+
+3. Ejecute la aplicación. Realice un gráfico con tiempo de ejecución para las diferentes cantidades
+de hilos mostradas en la aplicación. Compare el mejor resultado con la cantidad de procesadores de su sistema.
+Aumente aún más la cantidad de hilos. Explique por qué, a partir de cierta cantidad de hilos, el tiempo aumenta.
+
+- El gráfico se encuentra en el archivo "pi_paralelo/grafico.pdf". La cantidad de hilos hace que el tiempo de
+ejecución aumente si la operación a realizar es simple y tiene poca cantidad de elementos, entonces el costo de
+procesamiento de creación de hilos es mayor al costo de simplemente realizar la operación.
+
+--------------------------------------------------------------------------------------------------------
+EJERCICIOS PRÁCTICOS
+--------------------------------------------------------------------------------------------------------
+
+1. Realice un programa que aplique la operacion SAXPY tanto serial (normal) como paralelo(OpenMP), para al
+menos tres tamaños diferentes de vectores. Mida y compare el tiempo de ejecucion entre ambos.
+
+- Al aumentar la longitud de los vectores, el tiempo de ejecución paralelo es más rápido que el tiempo que dura
+la aplicación sin el método de paralelismo. En caso de no ser una longitud muy grande, el tiempo serial es
+mucho mayor al tiempo paralelizado. Al probar con 1000000 datos en cada arreglo, se obtuvo que el tiempo
+serial es de 0.005889 segundos, mientras que el tiempo paralelo es de 0.002099 segundos. Para el caso de una
+longitud de 1000 elementos, se tiene que el tiempo serial es de 0.000018 segundos, mientras que el tiempo
+paralelo es de 0.000867 segundos.
