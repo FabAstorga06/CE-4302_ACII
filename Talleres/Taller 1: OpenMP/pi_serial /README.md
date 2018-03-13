@@ -1,4 +1,4 @@
-###Aproximacion de pi 
+### Aproximacion de pi 
 
 Para compilar, dirigase a la carpeta donde se encuentra el archivo "pi.c" e introduzca el siguiente comando:
 

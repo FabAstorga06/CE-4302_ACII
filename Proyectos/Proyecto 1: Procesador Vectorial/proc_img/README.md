@@ -2,7 +2,7 @@
 
 Agrega escala de grises a una imagen con la biblioteca OpenCV en C. 
 
-###Compilacion
+### Compilacion
 Para compilar el código, primero debe instalar OpenCV. Posteriormente dirígase a la carpeta donde se encuentra el archivo Makefile y ejecute el siguiente comando: 
 * $ make
 

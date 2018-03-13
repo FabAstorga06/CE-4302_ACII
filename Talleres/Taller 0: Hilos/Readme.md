@@ -1,8 +1,8 @@
-* Descripción
+### Descripción
 Aplicación en C en la que interactúan 2 hilos. El primer hilo simula un proceso de muestreo, al generar un número entero de bits aleatorio (entre 0 y 255) y almacenarlo en un arreglo cada 10 milisegundos. El segundo hilo toma los datos, uno a uno del arreglo, y aplica una operación XOR con el número 0X20 y muestra el dato como un caracter en la terminal.
 
 
-* Compilación y ejecución
+### Compilación y ejecución
 Para ejecutar la aplicación, dirígase a la carpeta "Taller 0: Hilos" (donde se encuentra el Makefile) por medio de la terminal y compile con make, ejecutando el siguiente comando:
 - $ make
 

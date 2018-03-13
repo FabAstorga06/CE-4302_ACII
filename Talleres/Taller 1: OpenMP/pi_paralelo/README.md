@@ -1,4 +1,4 @@
-###Aproximacion de pi con paralelismo via OpenMP
+### Aproximacion de pi con paralelismo via OpenMP
 
 
 Para compilar, dirigase a la carpeta donde se encuentra el archivo "pi_par.c" e introduzca el siguiente comando:

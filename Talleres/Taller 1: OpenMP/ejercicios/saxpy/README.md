@@ -1,4 +1,4 @@
-A###Operacion SAXPY
+### Operacion SAXPY
 
 
 Para compilar, dirigase a la carpeta donde se encuentra el archivo "saxpy.c" e introduzca el siguiente comando:
