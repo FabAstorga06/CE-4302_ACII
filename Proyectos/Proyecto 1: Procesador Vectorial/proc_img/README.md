@@ -12,10 +12,10 @@ Para ejecutar el código, corra el ejecutable que se generó en la carpeta donde
 
 
 donde n es un numero entero del 1 al 4 el cual representa el algoritmo de encriptación que desee utilizar según la siguiente convención:
-1 -> Algoritmo XOR 
-2 -> Desplazamiento simple
-3 -> Desplazamiento circular
-4 -> Suma simple
+* 1 -> Algoritmo XOR 
+* 2 -> Desplazamiento simple
+* 3 -> Desplazamiento circular
+* 4 -> Suma simple
 
 Los otros parametros corresponden a los porcentajes de procesamiento por el procesador propio de la FPGA (porcentaje1), mientras que el otro es el porcentaje procesado por el procesador vectorial realizado en Verilog, el cual se encuentra en la carpeta [proc_vect](https://github.com/FabAstorga06/CE-4302_ACII/tree/master/Proyectos/Proyecto%201:%20Procesador%20Vectorial/proc_vect). 
 
