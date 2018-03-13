@@ -17,7 +17,7 @@ donde n es un numero entero del 1 al 4 el cual representa el algoritmo de encrip
 3 -> Desplazamiento circular
 4 -> Suma simple
 
-Los otros parametros corresponden a los porcentajes de procesamiento por el procesador propio de la FPGA (porcentaje1), mientras que el otro es el porcentaje procesado por el procesador vectorial realizado en Verilog, el cual se encuentra en la carpeta [proc_vect](). 
+Los otros parametros corresponden a los porcentajes de procesamiento por el procesador propio de la FPGA (porcentaje1), mientras que el otro es el porcentaje procesado por el procesador vectorial realizado en Verilog, el cual se encuentra en la carpeta [proc_vect](https://github.com/FabAstorga06/CE-4302_ACII/tree/master/Proyectos/Proyecto%201:%20Procesador%20Vectorial/proc_vect). 
 
 ### Ejemplo de uso 
 * $ ./img vegeta.jpg 3 70 30
