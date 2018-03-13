@@ -44,8 +44,8 @@ void show_image (IplImage* img) {
 int main(int argc, char* argv[] )  {
 
   // Verifica si se inserto el nombre de la imagen al ejecutar
-  if (argc < 2 ) {
-    printf("Inserte el nombre de la imagen...\n\7");
+  if (argc < PARAMS ) {
+    printf("Inserte los parámetros correspondientes...\n");
     exit(0);
   }
 
@@ -73,8 +73,12 @@ int main(int argc, char* argv[] )  {
   printf("----DECRYPT SIMPLE DISPLACE----\n");
   decrypt_simple_desp(mtx_g);
 
-
-  // circular_desp(mtx_g, img_g->height, img_g->width);
+  /* Encriptacion con desplazamiento circular */
+//  printf("----ENCRYPT CIRCULAR DISPLACE----\n");
+//  circular_desp(mtx_g);
+  /* Desencripta con desplazamiento circular  */
+//  printf("----DECRYPT CIRCULAR DISPLACE----\n");
+//  decrypt_circular_desp(mtx_g);
 
 
 /* TOMAR EN CUENTA EL DESBORDAMIENTO **** */
