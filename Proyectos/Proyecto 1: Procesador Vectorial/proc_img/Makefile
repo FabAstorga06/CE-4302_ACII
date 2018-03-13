@@ -6,7 +6,7 @@ PROG = img
 OPENCV = `pkg-config opencv --cflags --libs`
 LIBS = $(OPENCV)
 
-$(PROG):$(SRC)
+$(PROG): $(SRC)
 				$(CC) $(CFLAGS) -o $(PROG) $(SRC) $(LIBS)
 
 clean:
