@@ -79,7 +79,7 @@ int main(int argc, char* argv[] )  {
         /* Encriptacion con XOR */
         printf("----ENCRYPT XOR----\n");
         xor_encrypt(mtx_g);
-        /* Desencripta con XOR */
+        /* Desencripta con la misma funcion XOR */
         printf("----DECRYPT XOR----\n");
         xor_encrypt(mtx_g);
         break;

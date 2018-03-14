@@ -5,7 +5,7 @@
 #include <cv.h>
 #include <highgui.h>
 
-#define PARAMS 5
+#define PARAMS 5  
 #define SIZE_W 200
 #define TITLE_W "Convertidor Imagenes"
 #define BIT_AMOUNT 8
