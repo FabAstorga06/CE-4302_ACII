@@ -1,7 +1,5 @@
 #include "encrypt_algs.c"
-
-
-extern unsigned int img_h, img_w, img_channels;
+#include "exceptions.c"
 
 /*********************************************************************************/
 
@@ -43,27 +41,16 @@ void show_image (IplImage* img) {
 
 int main(int argc, char* argv[] )  {
 
-  // Verifica si se inserto el nombre de la imagen al ejecutar
-  if (argc != PARAMS ) {
-    printf("Inserte los parámetros correspondientes...\n");
-    exit(0);
-  }
-  // Verifica el algoritmo de encriptacion escogido por el usuario
-  int num_encrypt = atoi(argv[2] );
-  if (num_encrypt < 1 || num_encrypt > 4) {
-    printf("Inserte un algoritmo de encriptación disponible...\n");
-    exit(0);
-  }
-  // Verifica los porcentajes seleccionados por el usuario
-  int p1 = atoi(argv[3] );
-  int p2 = atoi(argv[4] );
-  if ( (p1 + p2) != 100) {
-    printf("Porcentajes invalidos, intente de nuevo...\n");
-    exit(0);
-  }
+  /* Maneja excepciones de los parámetros de entrada */
+  handle_exceptions(check_am_params, (void *)(intptr_t)(argc), NULL );
+  handle_exceptions(check_encrpt, argv[2], NULL );
+  handle_exceptions(check_prnctgs, argv[3], argv[4] );
+
+  /*******************************************************************/
 
   /* SE MUESTRA IMAGEN EN ESCALA DE GRISES */
-  // Se convierte imagen a escala de grises
+
+  /* Se convierte imagen a escala de grises */
   IplImage* img_g = convert2gray(argv[1] );
   show_image(img_g);
 
@@ -112,8 +99,7 @@ int main(int argc, char* argv[] )  {
         break;
 
      default:
-       printf("Algo ha fallado, inténtelo de nuevo...\n");
-       exit(0);
+        break;
   }
 
   return 0;

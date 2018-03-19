@@ -1,6 +1,6 @@
 #include "constants.h"
 
-// Variable temporal de prueba 
+// Variable temporal de prueba
 int tmp = 5;
 /*****************************************************************/
 
@@ -47,6 +47,10 @@ void simple_desp (CvMat* mtx ) {
   }
 }
 
+/* Algoritmo de decriptacion que desplaza los pixeles
+ * una cierta cantidad de veces a la derecha
+ * para una imagen en escala de grises, se pierde info
+ */
 void decrypt_simple_desp (CvMat* mtx ) {
   CvScalar pix;
   uint8_t xx, res;
@@ -91,6 +95,10 @@ void circular_desp (CvMat* mtx ) {
   }
 }
 
+/* Algoritmo de decriptacion que desplaza los pixeles
+ * una cierta cantidad de veces a la derecha y guarda
+ * los bits a la izquierda
+ */
 void decrypt_circular_desp (CvMat* mtx ) {
   CvScalar pix;
   uint8_t xx, res_l, res_r, or_res;

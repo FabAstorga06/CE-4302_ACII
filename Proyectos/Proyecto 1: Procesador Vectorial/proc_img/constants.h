@@ -5,10 +5,12 @@
 #include <cv.h>
 #include <highgui.h>
 
-#define PARAMS 5  
+/* Constantes */
+#define PARAMS 5
 #define SIZE_W 200
-#define TITLE_W "Convertidor Imagenes"
+#define TITLE_W "Image Converter"
 #define BIT_AMOUNT 8
+#define OK 1
 
 /* Funciones para encriptar */
 #define PIX_VEC 4
@@ -20,6 +22,9 @@
 static uint8_t private_key = 0x0FA; // 250 en decimal
 static uint8_t bits_displ = 2; // desplazamiento
 static uint8_t pix_arr[PIX_VEC] = {12, 5, 100, 10}; //Clave de pixeles
+
+/* Parametro de entrada que determina el algoritmo de encriptacion */
+static int num_encrypt;
 
 /* Dimensiones y canales de la imagen */
 unsigned int img_h = 0;
