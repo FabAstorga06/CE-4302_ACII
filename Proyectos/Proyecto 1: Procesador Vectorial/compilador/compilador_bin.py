@@ -1,8 +1,6 @@
 #####################################################
 #                                                   #
-#      Python Compiler for ISA                      #
-#      Author:  Frander Granados Vega               #
-#      fgranados@ic-itcr.ac.cr                      #
+#      Compialdor Python para ISA vectorial         #
 #                                                   #
 #####################################################
 
@@ -154,29 +152,8 @@ def read(source,target): #Lee el archivo origen
                 cont = cont + 1;
     if(error == False): #Si no da error continua
         write(instructionTable,target);
+        print("Compilación con exito");
 
-def texto(source,destino): #Para lectura del texto de memoria de datos
-    listaTexto = [];
-    for i in lorem:
-        listaTexto.append(bin(int.from_bytes(i.encode(), 'big'))[2:]) #los agrega convertidos en binario
-    with open(source) as archive:
-        for line in archive:
-            for i in line:
-               listaTexto.append(bin(int.from_bytes(i.encode(), 'big'))[2:])
-    indice = 0;           
-    for i in listaTexto:
-        j=len(i)
-        ceros = ''
-        while(j < 7):
-            ceros += "0"
-            j = j + 1;
-        listaTexto[indice] = ceros + i;
-        indice += 1;          
-
-    with open(destino, 'w') as archive:
-        cont = 0;        
-        for i in listaTexto:
-            print(i, file=archive);
 
 read('test.txt','salida.txt')            
 
