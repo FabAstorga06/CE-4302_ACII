@@ -1,6 +1,6 @@
 #####################################################
 #                                                   #
-#      Compialdor Python para ISA vectorial         #
+#      Compilador Python para ISA vectorial         #
 #                                                   #
 #####################################################
 
