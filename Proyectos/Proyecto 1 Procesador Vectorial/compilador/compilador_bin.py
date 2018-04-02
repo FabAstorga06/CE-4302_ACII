@@ -1,6 +1,6 @@
 #####################################################
 #                                                   #
-#      Compilador Python para ISA vectorial         #
+#      Compialdor Python para ISA vectorial         #
 #                                                   #
 #####################################################
 
@@ -65,7 +65,7 @@ def binario(instruction):
                 return(opcode+dest+dato1+dato2);
             else:
                 if(len(instruction[2]) == 3):           # verifica si el registro es vectorial
-                    indice = 2;
+                    indice1 = 2;
                 if(len(instruction[3]) == 3):           # verifica si el registro es vectorial
                     indice2 = 2;
                 dato1 = agregaCeros(instruction[2][indice:],3);
@@ -77,25 +77,25 @@ def binario(instruction):
     elif(len(instruction)==3):
         if(formatList[n] == 1): # load/store
             reg = "";
+            dir_mem = "";
+            indice = 0;
+            dir_mem = agregaCeros(int(instruction[2][2:],16),7); #se pasa la direccion hexa a binario   
             if(n == 3 or n == 4): # load/store con vectores
-                reg = agregaCeros(instruction[1][2:],3);
-                #falta dir_mem
-                return(opcode+reg);
+                indice = 2;
             if(n == 12 or n == 13): # load/store con escalares
-                reg = agregaCeros(instruction[1][1:],3);
-                #falta dir_mem
-                return(opcode+reg);
-            else:
-                return -1;
+                indice = 1;
+            reg = agregaCeros(instruction[1][indice:],3);
+            return(opcode+reg+dir_mem);
+            
         else:
             return -1;
         
     elif(len(instruction)==2):
         if(n == 14):    # MOV
-            dest = agregaCeros(instruction[1][1:],3);
+            dest = agregaCeros(instruction[1][1:],2);
             return(opcode+dest);
         elif (n == 15): # VFS
-            dest = agregaCeros(instruction[1][2:],3);
+            dest = agregaCeros(instruction[1][2:],2);
             return(opcode+dest);
         else:
             return -1;
@@ -155,5 +155,5 @@ def read(source,target): #Lee el archivo origen
         print("Compilación con exito");
 
 
-read('test.txt','salida.txt')            
+read('entrada.txt','program.bin')            
 

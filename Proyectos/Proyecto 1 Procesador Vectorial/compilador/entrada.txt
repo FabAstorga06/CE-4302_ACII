@@ -1,0 +1,6 @@
+;prueba de codigo
+OR,RV0,RV1,RV3 ;comentario
+SUMV,RV0,RV2,RV7
+RESV, RV0, RV2, RV5
+LOADV, RV2, 0xF
+STOREV, RV2, 0x7F
