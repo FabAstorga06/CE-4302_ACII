@@ -17,8 +17,8 @@ IplImage* convert2gray(char* img_name ) {
   img_h = img_proc->height;
   img_w = img_proc->width;
   img_channels = img_proc->nChannels;
-  printf("Procesando imagen de %dx%d con %d canales.\n",img_h,
-                                            img_w,img_channels);
+  printf("Procesando imagen de %dx%d con %d canales.\n",img_w,
+                                            img_h,img_channels);
   // Crea ventana para mostrar imagen
   cvNamedWindow(TITLE_W, CV_WINDOW_AUTOSIZE);
   cvMoveWindow(TITLE_W, SIZE_W, SIZE_W);

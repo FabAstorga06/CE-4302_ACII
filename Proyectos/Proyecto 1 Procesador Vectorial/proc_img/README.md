@@ -2,7 +2,7 @@
 
 Agrega escala de grises a una imagen con la biblioteca OpenCV en C y encripta mediante uno de los cuatro algoritmos disponibles. 
 
-### Compilacion
+### Compilación
 Para compilar el código, primero debe instalar OpenCV. Posteriormente dirígase a la carpeta donde se encuentra el archivo Makefile y ejecute el siguiente comando: 
 * $ make
 
@@ -23,3 +23,8 @@ Los otros parametros corresponden a los porcentajes de procesamiento por el proc
 * $ ./img vegeta.jpg 3 70 30
 
 Al ejecutarse el comando anterior, la imagen se cambiará a escala de grises, se encriptará mediante el algoritmo de desplazamiento circular con un 70% procesado por el CPU de la FPGA y 30% procesado por el procesador vectorial implementado.
+
+### Otros ejemplos 
+
+* $ ./img pl.jpeg 1 16 84
+* $ ./img hh.png 4 57 43

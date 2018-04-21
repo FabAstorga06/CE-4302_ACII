@@ -1,7 +1,5 @@
 #include "constants.h"
 
-// Variable temporal de prueba
-int tmp = 5;
 /*****************************************************************/
 
 /* Algoritmo de encriptacion XOR
@@ -10,8 +8,8 @@ int tmp = 5;
 void xor_encrypt(CvMat* mtx ) {
   CvScalar pix;
   uint8_t xx, xor_val;
-  for(int i = 0; i < tmp; i++) {
-    for(int j = 0; j < tmp; j++) {
+  for(int j = 0; j < img_h; j++) {
+    for(int i = 0; i < img_w; i++) {
        pix = cvGet2D( mtx, j, i);
        xx = (uint8_t)(pix.val[0]);
        printf( "%d ",xx);
@@ -33,8 +31,8 @@ void xor_encrypt(CvMat* mtx ) {
 void simple_desp (CvMat* mtx ) {
   CvScalar pix;
   uint8_t xx, res;
-  for(int i = 0; i < tmp; i++) {
-    for(int j = 0; j < tmp; j++) {
+  for(int j = 0; j < img_h; j++) {
+    for(int i = 0; i < img_w; i++) {
        pix = cvGet2D( mtx, j, i);
        xx = (uint8_t)(pix.val[0]);
        printf( "%d ",xx);
@@ -54,8 +52,8 @@ void simple_desp (CvMat* mtx ) {
 void decrypt_simple_desp (CvMat* mtx ) {
   CvScalar pix;
   uint8_t xx, res;
-  for(int i = 0; i < tmp; i++) {
-    for(int j = 0; j < tmp; j++) {
+  for(int j = 0; j < img_h; j++) {
+    for(int i = 0; i < img_w; i++) {
        pix = cvGet2D( mtx, j, i);
        xx = (uint8_t)(pix.val[0]);
        printf( "%d ",xx);
@@ -78,15 +76,14 @@ void decrypt_simple_desp (CvMat* mtx ) {
 void circular_desp (CvMat* mtx ) {
   CvScalar pix;
   uint8_t xx, res_l, res_r, or_res;
-  for(int i = 0; i < tmp; i++) {
-    for(int j = 0; j < tmp; j++) {
+  for(int j = 0; j < img_h; j++) {
+    for(int i = 0; i < img_w; i++) {
        pix = cvGet2D( mtx, j, i);
        xx = (uint8_t)(pix.val[0]);
        printf( "%d ",xx);
        res_l = MV(xx);
        res_r = xx >> (BIT_AMOUNT - bits_displ );
        or_res = (res_l | res_r);
-
        CvScalar res_scal = cvRealScalar(or_res);
        cvSet2D(mtx, j, i, res_scal );
        printf( "Dato desplazado: %.f |", cvGet2D( mtx, j, i).val[0]);
@@ -102,8 +99,8 @@ void circular_desp (CvMat* mtx ) {
 void decrypt_circular_desp (CvMat* mtx ) {
   CvScalar pix;
   uint8_t xx, res_l, res_r, or_res;
-  for(int i = 0; i < tmp; i++) {
-    for(int j = 0; j < tmp; j++) {
+  for(int j = 0; j < img_h; j++) {
+    for(int i = 0; i < img_w; i++) {
        pix = cvGet2D( mtx, j, i);
        xx = (uint8_t)(pix.val[0]);
        printf( "%d ", xx);
@@ -125,15 +122,16 @@ void decrypt_circular_desp (CvMat* mtx ) {
  */
 void simple_add (CvMat* mtx) {
   CvScalar pix;
-  uint8_t xx, res;
+  unsigned char xx;
+  uint8_t res;
   int offset = 0;
-  for(int i = 0; i < tmp; i++) {
-    for(int j = 0; j < tmp; j++) {
+  for(int j = 0; j < img_h; j++) {
+    for(int i = 0; i < img_w; i++) {
        if (offset == PIX_VEC) {
          offset = 0;
        }
        pix = cvGet2D( mtx, j, i);
-       xx = (uint8_t)(pix.val[0]);
+       xx = (unsigned char)(pix.val[0]);
        printf( "%d ",xx);
        res = xx + (pix_arr[offset] );
        CvScalar res_scal = cvRealScalar(res );
@@ -151,15 +149,16 @@ void simple_add (CvMat* mtx) {
  */
 void simple_add_decrypt (CvMat* mtx) {
   CvScalar pix;
-  uint8_t xx, res;
+  unsigned char xx;
+  uint8_t res;
   int offset = 0;
-  for(int i = 0; i < tmp; i++) {
-    for(int j = 0; j < tmp; j++) {
+  for(int j = 0; j < img_h; j++) {
+    for(int i = 0; i < img_w; i++) {
        if (offset == PIX_VEC) {
          offset = 0;
        }
        pix = cvGet2D( mtx, j, i);
-       xx = (uint8_t)(pix.val[0]);
+       xx = (unsigned char)(pix.val[0]) ;
        printf( "%d ",xx);
        res = xx - (pix_arr[offset] );
        CvScalar res_scal = cvRealScalar(res );
