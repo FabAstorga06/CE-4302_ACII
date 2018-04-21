@@ -1,0 +1,718 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/16.1
+vadelantamiento
+Z0 !s110 1523929144
+!i10b 1
+!s100 8XeV=<`[<0BBf@AA38W7A3
+IJZ2f3`AKZOTgi5=JINjFe2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Javier/Documents/Altera/test_proc_v
+w1523054147
+8C:/Users/Javier/Documents/Altera/test_proc_v/adelantamiento.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/adelantamiento.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1523929144.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/adelantamiento.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/adelantamiento.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+valu
+R0
+!i10b 1
+!s100 UDch=Q?`:aoUV[DDn@NLF0
+IMn9G8;@L1^0;icTz>m_A90
+R1
+R2
+w1523400593
+8C:/Users/Javier/Documents/Altera/test_proc_v/alu.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/alu.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/alu.v|
+!i113 1
+R5
+R6
+vcasi_proc_test
+!s110 1523922378
+!i10b 1
+!s100 JI3?f_QWe5C?cYNS75D@i2
+IgX5ecCS50Z7XnH0aZ63T92
+R1
+R2
+w1523752851
+8C:/Users/Javier/Documents/Altera/test_proc_v/casi_proc_test.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/casi_proc_test.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1523922378.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/casi_proc_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/casi_proc_test.v|
+!i113 1
+R5
+R6
+vcompare_pcmem
+R0
+!i10b 1
+!s100 NFCeYZdO:g0H@E_4JXkcz0
+IS785XNTf^=2Ckl]Uh[lcY1
+R1
+R2
+w1523925687
+8C:/Users/Javier/Documents/Altera/test_proc_v/compare_pcmem.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/compare_pcmem.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/compare_pcmem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/compare_pcmem.v|
+!i113 1
+R5
+R6
+vetapa_EXE
+R0
+!i10b 1
+!s100 KR4mNCmTcG_n9ce5jkaP63
+ILWaSazEcQ`kNPVXXmNKg<1
+R1
+R2
+Z7 w1523398878
+8C:/Users/Javier/Documents/Altera/test_proc_v/etapa_EXE.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/etapa_EXE.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/etapa_EXE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/etapa_EXE.v|
+!i113 1
+R5
+R6
+netapa_@e@x@e
+vetapa_ID
+Z8 !s110 1523929145
+!i10b 1
+!s100 Ll4<fCB76E]AY91o_Ra>Z1
+IKT=F^>=]=nW8`[nHMI20]1
+R1
+R2
+w1523751124
+8C:/Users/Javier/Documents/Altera/test_proc_v/etapa_ID.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/etapa_ID.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1523929145.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/etapa_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/etapa_ID.v|
+!i113 1
+R5
+R6
+netapa_@i@d
+vetapa_IF
+R8
+!i10b 1
+!s100 =A4YdYAW;a@Q26ak>4NMT2
+I`?B2DZ6@1ZaOS4fzcbDf?3
+R1
+R2
+w1523750844
+8C:/Users/Javier/Documents/Altera/test_proc_v/etapa_IF.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/etapa_IF.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/etapa_IF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/etapa_IF.v|
+!i113 1
+R5
+R6
+netapa_@i@f
+vetapa_MEM
+R8
+!i10b 1
+!s100 F6n^`BiJ_=GX66KY1l]G_2
+IYao8E;[eA7DA^nc[heL>f2
+R1
+R2
+w1523780536
+8C:/Users/Javier/Documents/Altera/test_proc_v/etapa_MEM.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/etapa_MEM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/etapa_MEM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/etapa_MEM.v|
+!i113 1
+R5
+R6
+netapa_@m@e@m
+vetapa_WB
+Z10 !s110 1523929146
+!i10b 1
+!s100 ?WjgJCRFl6<PdM6ZC>eKF0
+IPSA:1O_?:Enn]M86UQB>Z2
+R1
+R2
+w1523030224
+8C:/Users/Javier/Documents/Altera/test_proc_v/etapa_WB.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/etapa_WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/etapa_WB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/etapa_WB.v|
+!i113 1
+R5
+R6
+netapa_@w@b
+vIF_REG_ID
+R10
+!i10b 1
+!s100 <6=kmU@O23gf<GhHZfhC`0
+I<FQ3dlMHoN^P[Zz`?C9_61
+R1
+R2
+w1523929063
+8C:/Users/Javier/Documents/Altera/test_proc_v/IF_REG_ID.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/IF_REG_ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z11 !s108 1523929146.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/IF_REG_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/IF_REG_ID.v|
+!i113 1
+R5
+R6
+n@i@f_@r@e@g_@i@d
+vIF_test
+!s110 1523922380
+!i10b 1
+!s100 9KGo0Yi4IP2=`YXRT9Lia2
+In1VRVI4NZmR=dTaJBEn7L1
+R1
+R2
+w1523755489
+8C:/Users/Javier/Documents/Altera/test_proc_v/IF_test.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/IF_test.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1523922380.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/IF_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/IF_test.v|
+!i113 1
+R5
+R6
+n@i@f_test
+vmux_2x10
+Z12 !s110 1523929147
+!i10b 1
+!s100 SJoD=?YW8^_h852MTU?W@3
+I;CPWPO6o@PVb0<HNz0M5b2
+R1
+R2
+w1522954707
+8C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x10.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/mux_2x10.v
+Z13 L0 40
+R3
+r1
+!s85 0
+31
+Z14 !s108 1523929147.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x10.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x10.v|
+!i113 1
+R5
+R6
+vmux_2x3
+R10
+!i10b 1
+!s100 z<lYUhkcT>=LA>`D3Jj4A0
+IPGEm6J[D8:2oSfLz8^0lK1
+R1
+R2
+w1522545216
+8C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x3.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/mux_2x3.v
+R13
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x3.v|
+!i113 1
+R5
+R6
+vmux_2x32
+R12
+!i10b 1
+!s100 hE0@nONZLZKdjg]D1eXoo0
+Ij^DSH6U91?SVQC=?m1j;X1
+R1
+R2
+w1522544900
+8C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x32.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/mux_2x32.v
+R13
+R3
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x32.v|
+!i113 1
+R5
+R6
+vmux_2x6
+R10
+!i10b 1
+!s100 aB4Bn2mf2>F@dGniJ9gTB2
+InAj`jORRoRn[AC6QS1h=O1
+R1
+R2
+R7
+8C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x6.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/mux_2x6.v
+R13
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x6.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x6.v|
+!i113 1
+R5
+R6
+vmux_2x8
+R10
+!i10b 1
+!s100 >;c^>CC9^oH6=:`Nb?RcT3
+IXEFEP>d6z7a1eoZ7<jdoB0
+R1
+R2
+w1522545168
+8C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x8.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/mux_2x8.v
+R13
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x8.v|
+!i113 1
+R5
+R6
+vmux_3x32
+R12
+!i10b 1
+!s100 alk6fXWG29^A5gYRFWdJY3
+IWD[RJa28zzAV]l9Mcj?2_3
+R1
+R2
+w1522544144
+8C:/Users/Javier/Documents/Altera/test_proc_v/mux_3x32.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/mux_3x32.v
+R13
+R3
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/mux_3x32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/mux_3x32.v|
+!i113 1
+R5
+R6
+vmux_8x10
+Z15 !s110 1523929148
+!i10b 1
+!s100 M0d3TBNhdN8_`5FPO7Te<1
+INn>Nie=dOB3Ii9W5H;`G:2
+R1
+R2
+w1522954678
+8C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x10.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/mux_8x10.v
+R13
+R3
+r1
+!s85 0
+31
+Z16 !s108 1523929148.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x10.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x10.v|
+!i113 1
+R5
+R6
+vmux_8x6
+R12
+!i10b 1
+!s100 mgPYlM_57z:h<DbEf=mD_3
+I@ZVPz4X@:WeSGZFaDXLBU2
+R1
+R2
+R7
+8C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x6.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/mux_8x6.v
+R13
+R3
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x6.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x6.v|
+!i113 1
+R5
+R6
+vProVec
+R15
+!i10b 1
+!s100 WPbSRL:mYh]8n:1[9:SeG0
+ITC6LGCF<S04e>id`oi:=M3
+R1
+R2
+w1523402093
+8C:/Users/Javier/Documents/Altera/test_proc_v/ProVec.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/ProVec.v
+L0 20
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/ProVec.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/ProVec.v|
+!i113 1
+R5
+R6
+n@pro@vec
+vram_v1
+R15
+!i10b 1
+!s100 Y`DfKXnO:NX]WG^9XAPng3
+IhAZWH`OP0Og`23;fb=MZI0
+R1
+R2
+w1523660908
+8C:/Users/Javier/Documents/Altera/test_proc_v/ram_v1.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/ram_v1.v
+R13
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/ram_v1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/ram_v1.v|
+!i113 1
+R5
+R6
+vregistro_EXE_MEM
+R15
+!i10b 1
+!s100 DWj1;imEJ9db8`LTACOR>0
+I2jkWB0P1j3^n`9eP6z[b80
+R1
+R2
+w1523053741
+8C:/Users/Javier/Documents/Altera/test_proc_v/registro_EXE_MEM.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/registro_EXE_MEM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/registro_EXE_MEM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/registro_EXE_MEM.v|
+!i113 1
+R5
+R6
+nregistro_@e@x@e_@m@e@m
+vregistro_ID_EXE
+R15
+!i10b 1
+!s100 G1eal@4c2C0YiVh8?8VfV3
+IV_;J1@olShjOj0dEmMf8M3
+R1
+R2
+Z17 w1523400594
+8C:/Users/Javier/Documents/Altera/test_proc_v/registro_ID_EXE.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/registro_ID_EXE.v
+L0 1
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/registro_ID_EXE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/registro_ID_EXE.v|
+!i113 1
+R5
+R6
+nregistro_@i@d_@e@x@e
+vregistro_IF_ID
+Z18 !s110 1523929149
+!i10b 1
+!s100 j;>B3YRVdQ5B;zOlgN:kS3
+Iaa6]m2;4@<SFjV^hHMJ3I1
+R1
+R2
+Z19 w1523748213
+8C:/Users/Javier/Documents/Altera/test_proc_v/registro_IF_ID.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/registro_IF_ID.v
+L0 1
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/registro_IF_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/registro_IF_ID.v|
+!i113 1
+R5
+R6
+nregistro_@i@f_@i@d
+vregistro_MEM_WB
+R18
+!i10b 1
+!s100 :<j51d2JOb6QKQDmoKR^;0
+I6=_dNXEj:Zc:BmklDW8TZ1
+R1
+R2
+w1523030075
+8C:/Users/Javier/Documents/Altera/test_proc_v/registro_MEM_WB.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/registro_MEM_WB.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z20 !s108 1523929149.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/registro_MEM_WB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/registro_MEM_WB.v|
+!i113 1
+R5
+R6
+nregistro_@m@e@m_@w@b
+vregistro_PC
+R18
+!i10b 1
+!s100 OL01JPogdaMXjF9W3lWY72
+IOMi^TbDBMij4hjgC:3F;92
+R1
+R2
+R19
+8C:/Users/Javier/Documents/Altera/test_proc_v/registro_PC.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/registro_PC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/registro_PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/registro_PC.v|
+!i113 1
+R5
+R6
+nregistro_@p@c
+vregistro_PCMEM
+Z21 !s110 1523929150
+!i10b 1
+!s100 7VNCEf<1GiSK28WWm4HTT0
+IOM2[D7Loo;V2zPL8K]fnj0
+R1
+R2
+w1523917700
+8C:/Users/Javier/Documents/Altera/test_proc_v/registro_PCMEM.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/registro_PCMEM.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z22 !s108 1523929150.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/registro_PCMEM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/registro_PCMEM.v|
+!i113 1
+R5
+R6
+nregistro_@p@c@m@e@m
+vregistros_sca
+R21
+!i10b 1
+!s100 65j=EYfB[ojXDADL5P0KM0
+IAh`g9WFCA@k7ze4`i@AC93
+R1
+R2
+R17
+8C:/Users/Javier/Documents/Altera/test_proc_v/registros_sca.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/registros_sca.v
+L0 1
+R3
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/registros_sca.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/registros_sca.v|
+!i113 1
+R5
+R6
+vregistros_vec
+R21
+!i10b 1
+!s100 RM?0_zk86=NFm2H]^hOR02
+I2dKcbCQHg=dk9RHT?^o721
+R1
+R2
+w1523770956
+8C:/Users/Javier/Documents/Altera/test_proc_v/registros_vec.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/registros_vec.v
+L0 1
+R3
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/registros_vec.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/registros_vec.v|
+!i113 1
+R5
+R6
+vrom_memory
+R21
+!i10b 1
+!s100 hMg9<J4[KCX^]ka9KG4hE2
+I[?JTSBE=CF5O3LE4k:Hib2
+R1
+R2
+R7
+8C:/Users/Javier/Documents/Altera/test_proc_v/rom_memory.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/rom_memory.v
+R13
+R3
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/rom_memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/rom_memory.v|
+!i113 1
+R5
+R6
+vsum_pcmem
+R21
+!i10b 1
+!s100 Tb2UeWe6Ao?TR=ICWWO]^3
+I><j[1TFEO7dEVL<4KN?OK2
+R1
+R2
+w1523925155
+8C:/Users/Javier/Documents/Altera/test_proc_v/sum_pcmem.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/sum_pcmem.v
+L0 1
+R3
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/sum_pcmem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/sum_pcmem.v|
+!i113 1
+R5
+R6
+vsuma_PC
+!s110 1523929151
+!i10b 1
+!s100 l=HO4Tzgh5nGK5oT0V24<1
+In`lKaOcB[idPDRzII^O8F2
+R1
+R2
+R7
+8C:/Users/Javier/Documents/Altera/test_proc_v/suma_PC.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/suma_PC.v
+R13
+R3
+r1
+!s85 0
+31
+!s108 1523929151.000000
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/suma_PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/suma_PC.v|
+!i113 1
+R5
+R6
+nsuma_@p@c
+vunidad_control
+R0
+!i10b 1
+!s100 T?b3Y5cZ:Xl5KSgVCFY;z2
+IZMoBkBazhcACG_AQlW@JB0
+R1
+R2
+w1523756878
+8C:/Users/Javier/Documents/Altera/test_proc_v/unidad_control.v
+FC:/Users/Javier/Documents/Altera/test_proc_v/unidad_control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Javier/Documents/Altera/test_proc_v/unidad_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Javier/Documents/Altera/test_proc_v/unidad_control.v|
+!i113 1
+R5
+R6

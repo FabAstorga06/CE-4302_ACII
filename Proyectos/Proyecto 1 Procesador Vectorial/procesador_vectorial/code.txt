@@ -1,0 +1,54 @@
+MOV, R1, 0xFA ;Posición 0
+LPC, RV1
+NOP
+XOR, RV1, RV1, R1 ;
+NOP
+SPC, RV1
+MOV, R1, 0x2  ;Posición 6
+LPC, RV1  ;
+NOP
+SLL, RV1, RV1, R1
+NOP
+SPC, RV1
+MOV, R1, 0x2 ;Posición 12
+LPC, RV1  ;
+NOP
+SRL, RV1, RV1, R1
+NOP
+SPC, RV1
+MOV, R1, 0x2  ;Posición 18
+LPC, RV1  ;
+NOP
+SLLC, RV1, RV1, R1
+NOP
+SPC, RV1
+MOV, R1, 0x2  ;Posición 24
+LPC, RV1  ;
+NOP
+SRLC, RV1, RV1, R1
+NOP
+SPC, RV1
+MOV, R1, 0xC ;12 Posición 30
+MOV, R2, 0x5
+MOV, R3, 0x64 ;100
+MOV, R4, 0xA ;10
+NOP
+NOP
+VFS, RV2  ;NOP antes de este VFS
+LPC, RV1
+NOP
+SUMV, RV3, RV1, RV2   ;Revisar desbordamiento
+NOP
+SPC, RV3
+MOV, R1, 0xC ;12  Posición 40
+MOV, R2, 0x5
+MOV, R3, 0x64 ;100
+MOV, R4, 0xA ;10
+NOP
+NOP
+VFS, RV2  ;
+LPC, RV1
+NOP
+RESV, RV3, RV1, RV2 ;
+NOP
+SPC, RV3

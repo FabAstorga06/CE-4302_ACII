@@ -1,1 +1,0 @@
-### Procesador vectorial montado en una FPGA e implementado en Verilog. 

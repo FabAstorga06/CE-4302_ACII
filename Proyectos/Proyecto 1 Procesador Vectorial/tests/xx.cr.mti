@@ -1,0 +1,183 @@
+C:/Users/Javier/Documents/Altera/test_proc_v/registros_vec.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/registros_vec.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module registros_vec
+
+Top level modules:
+	registros_vec
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/compare_pcmem.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/compare_pcmem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module compare_pcmem
+
+Top level modules:
+	compare_pcmem
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/suma_PC.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/suma_PC.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module suma_PC
+
+Top level modules:
+	suma_PC
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/IF_REG_ID.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/IF_REG_ID.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module IF_REG_ID
+
+Top level modules:
+	IF_REG_ID
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/registro_PC.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/registro_PC.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module registro_PC
+
+Top level modules:
+	registro_PC
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/mux_3x32.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/mux_3x32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux_3x32
+
+Top level modules:
+	mux_3x32
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x6.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x6.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux_2x6
+
+Top level modules:
+	mux_2x6
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/etapa_MEM.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/etapa_MEM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module etapa_MEM
+
+Top level modules:
+	etapa_MEM
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x8.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux_2x8
+
+Top level modules:
+	mux_2x8
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/etapa_WB.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/etapa_WB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module etapa_WB
+
+Top level modules:
+	etapa_WB
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x10.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x10.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux_2x10
+
+Top level modules:
+	mux_2x10
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/registro_EXE_MEM.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/registro_EXE_MEM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module registro_EXE_MEM
+
+Top level modules:
+	registro_EXE_MEM
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x6.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x6.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux_8x6
+
+Top level modules:
+	mux_8x6
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x32.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux_2x32
+
+Top level modules:
+	mux_2x32
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/registro_PCMEM.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/registro_PCMEM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module registro_PCMEM
+
+Top level modules:
+	registro_PCMEM
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/registros_sca.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/registros_sca.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module registros_sca
+
+Top level modules:
+	registros_sca
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/registro_IF_ID.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/registro_IF_ID.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module registro_IF_ID
+
+Top level modules:
+	registro_IF_ID
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/alu.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x10.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/mux_8x10.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux_8x10
+
+Top level modules:
+	mux_8x10
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/etapa_EXE.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/etapa_EXE.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module etapa_EXE
+
+Top level modules:
+	etapa_EXE
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/registro_ID_EXE.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/registro_ID_EXE.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module registro_ID_EXE
+
+Top level modules:
+	registro_ID_EXE
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/registro_MEM_WB.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/registro_MEM_WB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module registro_MEM_WB
+
+Top level modules:
+	registro_MEM_WB
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/sum_pcmem.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/sum_pcmem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sum_pcmem
+
+Top level modules:
+	sum_pcmem
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x3.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/mux_2x3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux_2x3
+
+Top level modules:
+	mux_2x3
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/ram_v1.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/ram_v1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ram_v1
+
+Top level modules:
+	ram_v1
+
+} {} {}} C:/Users/Javier/Documents/Altera/test_proc_v/rom_memory.v {1 {vlog -work work -stats=none C:/Users/Javier/Documents/Altera/test_proc_v/rom_memory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module rom_memory
+
+Top level modules:
+	rom_memory
+
+} {} {}}

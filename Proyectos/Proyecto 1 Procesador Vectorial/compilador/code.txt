@@ -1,0 +1,44 @@
+﻿; CODIGO DE ENCRIPTACIÓN PARA EL PROCESADOR VECTORIAL
+; Encriptación y desencriptación XOR
+MOV, R1, 0xFA
+LPC, RV1
+XOR, RV1, RV1, R1 ;AQUÍ DEBERÍA IR UN NOP ANTES DEL SPC
+SPC, RV1
+;Encriptación por DESPLAZAMIENTO SIMPLE izquierda
+MOV, R1, 0x2
+LPC, RV1  ;NOP después del load
+SLL, RV1, RV1, R1
+SPC, RV1
+;Encriptación por DESPLAZAMIENTO SIMPLE derecha
+MOV, R1, 0x2
+LPC, RV1  ;NOP después del load
+SRL, RV1, RV1, R1
+SPC, RV1
+;Encriptación por DESPLAZAMIENTO CIRCULAR izquierda
+MOV, R1, 0x2
+LPC, RV1  ;NOP después del load
+SLLC, RV1, RV1, R1
+SPC, RV1
+;Encriptación por DESPLAZAMIENTO CIRCULAR derecha
+MOV, R1, 0x2
+LPC, RV1  ;NOP después del load
+SRLC, RV1, RV1, R1
+SPC, RV1
+;Encriptación por SUMA SIMPLE
+MOV, R1, 0xC ;12
+MOV, R2, 0x5
+MOV, R3, 0x64 ;100
+MOV, R4, 0xA ;10
+VFS, RV2  ;NOP antes de este VFS
+LPC, RV1
+SUMV, RV3, RV1, RV2   ;Revisar desbordamiento
+SPC, RV3
+;Desencriptación por SUMA SIMPLE (restando)
+MOV, R1, 0xC ;12
+MOV, R2, 0x5
+MOV, R3, 0x64 ;100
+MOV, R4, 0xA ;10
+VFS, RV2  ;NOP antes de este VFS
+LPC, RV1
+RESV, RV3, RV1, RV2 ;Aquí debería ir un nop
+SPC, RV3
