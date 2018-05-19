@@ -104,7 +104,7 @@ int main(int argc, char** argv ) {
 
     // Ejecuta el kernel 
     size_t global_item_size = size;
-    size_t local_item_size = 1000; 
+    size_t local_item_size = 1; 
     clock_t start_time = clock();
     ret = clEnqueueNDRangeKernel(command_queue, kernel, 1, NULL, 
             &global_item_size, &local_item_size, 0, NULL, NULL);
